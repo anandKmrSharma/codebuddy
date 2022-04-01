@@ -1,0 +1,36 @@
+// level {1/2/3}
+ // level 1
+
+//  Write a function in Javascript to print the following pattern.
+
+//  ```
+// 	   1
+// 	 1 2 1
+//    1 2 3 2 1
+//  1 2 3 4 3 2 1
+//  ```
+var num=5;
+var output="";
+for(var i=0; i <num; i++){
+	for(var j=0; j <2*num; j++){
+		var abs=Math.abs(num-j);
+	output+= ( abs>i ? " " : i-abs+1 + " " ) 
+	}
+	console.log(" ");
+
+}
+console.log(output);
+
+
+
+
+
+// for(var i=0; i < num; i++){
+// 	var ans="";
+// 	for(var j=1; j <=num; j++){
+// 		ans+= " "+j+" "
+// console.log(ans);        
+
+// 	}
+// }
+
